@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let ano2021=[0]
+        let vendas2021 = 0
+        let ano2022=[0]
+        let vendas2022 = 0
+        for(let i = 1; i <= 24; i++)
+        {
+            if(i <= 12)
+            {
+                vendas2021 = Number(window.prompt(`Digite o valor de vendas do ${i}º mes de 2021: `))
+                ano2021.push(vendas2021)
+            }
+            else if(i > 12)
+            {
+                vendas2022 = Number(window.prompt(`Digite o valor de vendas do ${i-12}º mes de 2022: `))
+                ano2022.push(vendas2022)
+            }
+        }
+        for(let i = 1 ; i <= 12 ; i++)
+        {
+            document.write(`Soma das vendas do ${i}º mês:${ano2021[i]+ano2022[i]}<br>`)
+        }
+    </script>
+</body>
+</html>

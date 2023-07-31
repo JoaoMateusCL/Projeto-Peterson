@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let valor = parseFloat(prompt("Informe o valor pago: "))
+        let desconto = parseFloat(prompt("Informe o desconto: "))
+        
+        descontoTotal = desconto/100
+        valorFinal = valor-(descontoTotal*valor)
+        document.getElementById("item1").innerHTML=`Informe o valor pago: ${valor}<br>Informe o desconto: ${desconto}<br>Total a pagar é R$ ${valorFinal} reais`
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let flag = "batata"
+        let escolhaUsuarioNum = 0
+        let caraCoroa = 0
+        let ponto = Number(0)
+        let escolhaUsuario = "repolho"
+        while(flag != "sair")
+        {
+            caraCoroa = getRandomIntInclusive(1,2);
+            console.log(caraCoroa)
+            escolhaUsuario = prompt("Cara ou Coroa: ")
+           
+            if(escolhaUsuario=="cara")
+            {
+                escolhaUsuarioNum=1
+            }
+            else if(escolhaUsuario=="coroa")
+            {
+                escolhaUsuarioNum=2
+            }
+
+            if(escolhaUsuarioNum==caraCoroa)
+            {
+                console.log(ponto)
+                ponto=ponto+1
+                document.write(`<br>Você venceu: deu cara,<br>Pontos:${ponto}`)
+            }
+            else if(escolhaUsuarioNum==caraCoroa)
+            {
+                console.log(ponto)
+                ponto=ponto+1
+                document.write(`<br>Você venceu: deu coroa,<br>Pontos:${ponto}`)
+            }
+            else if(escolhaUsuarioNum!=caraCoroa)
+            {
+                document.write("<br>Você perdeu: deu cara")
+            }
+            else if(escolhaUsuarioNum!=caraCoroa)
+            {
+                document.write("<br>Você perdeu: deu coroa")
+            }
+            flag = prompt("digite sair para sair")
+        }
+
+        function getRandomIntInclusive(min, max) 
+        {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1) + min);
+        }
+    </script>
+</body>
+</html>

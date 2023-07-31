@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let radianos = parseFloat(prompt("Informe o valor do angulo em radianos: "))
+        let catetoAdj = parseFloat(prompt("Informe o valor do cateto adjacente: "))
+
+        let hipotenusa = catetoAdj/Math.cos(radianos)
+
+        document.getElementById("item1").innerHTML=`Informe o valor do angulo em radianos: ${radianos}<br>Informe o valor do cateto adjacente: ${catetoAdj}<br>O valor da hipotenusa é: ${hipotenusa}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let idade1 = Number(prompt("Digite a 1º idade: "))
+        let idade2 = Number(prompt("Digite a 2º idade: "))
+        let idade3 = Number(prompt("Digite a 3º idade: "))
+        let idade4 = Number(prompt("Digite a 4º idade: "))
+        let idade5 = Number(prompt("Digite a 5º idade: "))
+        let idades = [idade1,idade2,idade3,idade4,idade5]
+        let maior = idades.reduce((acumulador, valorAual) => Math.max(acumulador, valorAual))
+        let menor = idades.reduce((acumulador, valorAual) => Math.min(acumulador, valorAual))
+
+        document.getElementById("item1").innerHTML=`Maior idade é: ${maior}<br>Menor idade é: ${menor}`
+    </script>
+</body>
+</html>

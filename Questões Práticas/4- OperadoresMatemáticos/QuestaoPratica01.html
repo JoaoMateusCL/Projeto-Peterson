@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    
+    <script>
+        let milimetro = parseFloat(prompt("Entre com um valor em milímetros: "))
+        document.getElementById("item1").innerHTML=`Entre com um valor em milímetros: ${milimetro}<br>${milimetro}mm valem ${milimetro/10}cm<br>${milimetro/10}cm valem ${milimetro/100}dm<br>${milimetro/100}dm valem ${milimetro/1000}m<br>${milimetro/1000}m valem ${milimetro/10000}dam<br>${milimetro/10000}dam valem ${milimetro/100000}hm<br>${milimetro/100000}hm valem ${milimetro/1000000}km`
+    </script>
+</body>
+</html>

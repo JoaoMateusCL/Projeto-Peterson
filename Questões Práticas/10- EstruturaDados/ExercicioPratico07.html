@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let notas = []
+        let soma = 0
+        let aprovados = []
+        let reprovados = []
+        for(let i = 1; i < 11; i++)
+        {
+            let alunoNota = Number(window.prompt(`Digite a nota do ${i}º aluno:`))
+            if(alunoNota <= 10 && alunoNota >= 0)
+            {
+                notas.push(Number(alunoNota))
+            }
+            else
+            {
+                window.alert("Nota invalida!! insira um valor válido")
+                alunoNota = Number(window.prompt(`Digite a nota do ${i}º aluno:`))
+                notas.push(Number(alunoNota))
+            }
+        }
+        for(let i = 0; i < notas.length ; i++)
+        {
+            if(notas[i] < 7)
+            {
+                reprovados.push(notas[i])
+            }
+            else if(notas[i] >= 7)
+            {
+                aprovados.push(notas[i])
+            }
+        }
+        document.write(`Quantidade de alunos aprovados: ${aprovados.length}<br>Quantidade de alunos reprovados: ${reprovados.length}`)
+    </script>
+</body>
+</html>

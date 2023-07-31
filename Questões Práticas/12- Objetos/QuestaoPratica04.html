@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let produto = 
+        {
+            nome: "Dark Souls III",
+            estoque: 123,
+
+            atualizacaoEstoque: function()
+            {
+                nome = window.prompt("Informe o nome do produto: ")
+                if(nome == this.nome)
+                {
+                    document.write("Sucesso!! Produto encontrado!!<br>")
+                    quantidadeRetirada = Number(window.prompt("Informe o quantidade a ser retirada ao estoque: "))
+                    
+                    if(quantidadeRetirada<this.estoque)
+                    {
+                        this.estoque -= quantidadeRetirada
+                        document.write(`Agora temos ${this.estoque} cópias de ${this.nome}`)
+                    }
+                    else
+                    {
+                        document.write("Não temos estoque suficente para isso")
+                    }
+                }
+                else
+                {
+                    document.write("Erro!! Produto não encontrado!!")
+                }
+            }
+        }
+        produto.atualizacaoEstoque()
+    </script>
+</body>
+</html>

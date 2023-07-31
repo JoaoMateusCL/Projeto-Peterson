@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let precoDesconto = 0
+        let precoNormal = Number(prompt("Informe o preco do produto"))
+        let codigo = prompt("escolha a forma de pagamento segunido essa tabela:\nCodigo   Condição de pagamento\n1            A vista em dinheiro ou cheque, recebe 10% de desconto\n2            A vista no cartão de crédito, recebe 5% de desconto\n3            Em duas vezes, preço normal de etiqueta sem juros\n4            Em três vezes, preço normal de etiqueta mais juros de 10%\nInforme a forma de pagamento: ")
+
+        if(codigo=="1")
+        {
+            precoDesconto = precoNormal-(precoNormal*0.1)
+            document.write(`O preço antes era ${precoNormal} o preço com desconto é ${precoDesconto}`)
+        }
+        else if(codigo=="2")
+        {
+            precoDesconto = precoNormal-(precoNormal*0.05)
+            document.write(`O preço antes era ${precoNormal} o preço com desconto é ${precoDesconto}`)
+        }
+        else if(codigo=="3")
+        {
+            document.write(`O preço do produto ${precoNormal}não vai ocorrer alterações e não vai haver juros`)
+        }
+        else if(codigo=="4")
+        {
+            precoDesconto = precoNormal+(precoNormal*0.1)
+            document.write(`O preço antes era ${precoNormal} o preço vai estar com um juros de 10% ${precoDesconto}`)
+        }
+        else
+        {
+            document.write("BATATA")
+        }
+    </script>
+</body>
+</html>

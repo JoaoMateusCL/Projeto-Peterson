@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nota1 = Number(prompt("informe a nota1: "))
+        let nota2 = Number(prompt("informe a nota2: "))
+        let nota3 = Number(prompt("informe a nota3: "))
+        let nota4 = Number(prompt("informe a nota4: "))
+        media = (nota1+nota2+nota3+nota4)/4
+
+        if(media < 5)
+        {
+            document.write("Ruim")
+        }
+        else if(media >=5 && media < 7)
+        {
+           document.write("Regular")
+        }
+        else if(media >=7 && media < 9)
+        {
+           document.write("Bom")
+        }
+        else if(media >=9 && media < 10)
+        {
+           document.write("Excelente")
+        }
+        else if(media <= 10)
+        {
+            document.write("Pika")
+        }
+        else
+        {
+            document.write("Batata")
+        }
+    </script>
+</body>
+</html>

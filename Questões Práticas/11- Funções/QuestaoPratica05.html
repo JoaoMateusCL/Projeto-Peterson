@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let a = parseFloat(prompt("Informe o valor de a: "))
+        let b = parseFloat(prompt("Informe o valor de b: "))
+        let c = parseFloat(prompt("Informe o valor de c: "))
+        
+        bhaskara(a,b,c)
+        function bhaskara(a,b,c)
+        {
+            delta = b**2-(4*a*c)
+
+            if(delta < 0)
+            {
+                return(document.write("Delta menor que zero. Portanto não existem raízes reais"))
+            }
+            else
+            {
+                bhaskaraPositivo = ((b*-1)+Math.sqrt(delta))/2*a
+                bhaskaraNegativo = ((b*-1)-Math.sqrt(delta))/2*a
+                return(document.getElementById("item1").innerHTML=`Informe o valor de a: ${a}<br>Informe o valor de b: ${b}<br>Informe o valor de c: ${c}<br>X|: ${bhaskaraPositivo} X||: ${bhaskaraNegativo}`)
+            }
+        }
+    </script>
+</body>
+</html>

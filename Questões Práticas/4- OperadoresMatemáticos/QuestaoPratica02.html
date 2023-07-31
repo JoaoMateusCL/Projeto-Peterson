@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    
+    <script>
+        let metros = parseFloat(prompt("Entre com um valor em metros: "))
+        document.getElementById("item1").innerHTML=`Entre com um valor em metros: ${metros}<br>${metros}m valem ${metros*10}dm<br>${metros*10}dm valem ${metros*100}cm<br>${metros*100}cm valem ${metros*1000}mm`
+    </script>
+</body>
+</html>

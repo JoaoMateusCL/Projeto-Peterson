@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peso = prompt("Informe o seu peso: ")
+        let altura = prompt("Informe a sua altura: ")
+        imc = peso/altura**2
+        
+        if(imc<18.5)
+        {
+            document.write(`Com IMC = ${imc} Você está abaixo do peso`)
+        }
+        else if(imc>=18.5 && imc <= 24.9)
+        {
+            document.write(`Com IMC = ${imc} Você está com peso normal`)
+        }
+        else if(imc>=25 && imc <=29.9)
+        {
+            document.write(`Com IMC = ${imc} Você está com excesso de peso`)
+        }
+        else if(imc>=30 && imc<35)
+        {
+            document.write(`Com IMC = ${imc} Você está com obesidade`)
+        }
+        else if(imc>=35)
+        {
+            document.write(`Com IMC = ${imc} Você está com obesidade Extrema`)
+        }
+    </script>
+</body>
+</html>

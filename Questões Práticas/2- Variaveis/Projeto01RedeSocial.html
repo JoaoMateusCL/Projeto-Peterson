@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let nome = prompt("Informe seu nome: ")
+        let idade = prompt("Informe sua idade: ")
+        let peso = prompt("Informe seu peso: ")
+        let altura = prompt("Informe sua altura: ")
+        let solteiro = prompt("Informe sua situação civil (true/false)")
+        let ocupacao = prompt("Informe sua ocupação: ")
+
+        document.getElementById("item1").innerHTML=`**********************<br>Seja bem vindo(a) ${nome}<br>Dados cadasto na rede social:<br>**********************<br>Sua idade é : ${idade}<br>Seu peso é: ${peso}<br>Sua altura é: ${altura}<br>É solteiro?: ${solteiro}<br>Sua ocupação é ${ocupacao}`
+    </script>
+</body>
+</html>

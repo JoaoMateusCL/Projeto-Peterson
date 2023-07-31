@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    
+    <script>
+        let salarioBruto = parseFloat(prompt("Informe seu sálario bruto: "))
+        let aliquotaINSS
+        let aliquotaIRRF
+
+        if(salarioBruto <= 1320)
+        {
+            aliquotaINSS = "7,5%"
+        }
+        else if(salarioBruto >= 1320.01 && salarioBruto <= 2571.29)
+        {
+            aliquotaINSS = "9%"
+        }
+        else if(salarioBruto >= 2571.30 && salarioBruto <= 3856.94)
+        {
+            aliquotaINSS = "12%"
+        }
+        else if(salarioBruto >= 3856.95 && salarioBruto <= 7507.49)
+        {
+            aliquotaINSS = "14%"
+        }
+
+        if(salarioBruto >= 1903.99 && salarioBruto <= 2826.65)
+        {
+            aliquotaIRRF = "7,5%"
+        }
+        else if (salarioBruto >= 2826.66 && salarioBruto <= 3751.05)
+        {
+            aliquotaIRRF = "15%"
+        }
+        else if(salarioBruto >= 3751.06 && salarioBruto <= 4664.68)
+        {
+            aliquotaIRRF = "22,5%"
+        }
+        else if(salarioBruto > 4664.68)
+        {
+            aliquotaIRRF = "27,5%"
+        }
+        else
+        {
+            aliquotaIRRF = "0%"
+        }
+
+        document.getElementById("item1").innerHTML = `$$ Calculo do Sálario $$<br>-------------------------<br>Salário Bruto é: ${salarioBruto}<br>Alíquota INSS é: ${aliquotaINSS}<br>Alíquota IRRF é: ${aliquotaIRRF}`
+    </script>
+</body>
+</html>

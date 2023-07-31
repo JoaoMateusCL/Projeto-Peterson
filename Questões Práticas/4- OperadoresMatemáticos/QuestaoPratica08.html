@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let catetoB = parseFloat(prompt("Informe o valor do cateto b: "))
+        let catetoC = parseFloat(prompt("Informe o valor do cateto C: "))
+        let hipotenusa = catetoB**2 + catetoC**2
+        let aux = Math.sqrt(hipotenusa)
+        document.getElementById("item1").innerHTML=`Informe o valor do cateto b: ${catetoB}<br>Informe o valor do cateto C: ${catetoC}<br>A hipotenusa é ${aux}`
+    </script>
+</body>
+</html>

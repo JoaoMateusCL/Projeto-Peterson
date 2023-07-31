@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let idade = prompt("Informe uma idade:")
+        document.getElementById("item1").innerHTML=`Informe uma idade: ${idade}<br>Voto é proibido?: ${idade<16}<br>Voto é facultativo?: ${idade>=16 && idade < 18}<br>Voto é obrigatorio?: ${idade>=18}`
+    </script>
+</body>
+</html>

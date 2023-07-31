@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let flag ="batata"
+        let quilometrosPercorridos = 0
+        let litrosConsmidos = 0
+        let quilometrosLitro = 0
+        let quilometrosLitroArray =[0]
+        let totalLitros = 0
+        let totalQuilometros = 0
+        let totalConsumo = 0
+        let contadorWhile = 0
+        
+        while(flag!="sair")
+        {
+            contadorWhile++
+            quilometrosPercorridos = parseInt(prompt(`Informe a quantidade de quilometros percorridos na ${contadorWhile}º viagem: `))
+            litrosConsmidos = parseInt(prompt("Informe a quantidade de combustivel consumido a viagem(em litros): "))
+            quilometrosLitro = quilometrosPercorridos/litrosConsmidos
+            quilometrosLitroArray.push(quilometrosLitro)
+            totalLitros += litrosConsmidos
+            totalQuilometros += quilometrosPercorridos
+            totalConsumo += quilometrosLitro
+            
+            document.write(`${contadorWhile}º momento: Até o momento o total de quiloetros percorridos foi: ${totalQuilometros}<br>${contadorWhile}º momento:Até o momento o total de litros de combustivel consumido foi: ${totalLitros}<br>`)
+            flag = prompt("Digite continuar para inserir outra viagem ou sair para encerrar o programa: ")
+        }
+        
+        let mediaLitros = totalLitros/contadorWhile
+        let mediaQuilometros = totalQuilometros/contadorWhile
+        let mediaConsumo = totalConsumo/contadorWhile.toFixed(2)
+
+        document.write(`<br>Consumo médio de todas as viagens: ${mediaConsumo.toFixed(2)}<br>Quilometrage média de todas as viagems: ${mediaQuilometros}<br>Combusivel médio usado em todas as viagems: ${mediaLitros}`)
+
+        for(let i = 1; i < quilometrosLitroArray.length; i++)
+        {
+            document.write(`<br>${i}º viagem: ${quilometrosLitroArray[i]}quilometros/litro<br>`)
+        }
+    </script>
+</body>
+</html>

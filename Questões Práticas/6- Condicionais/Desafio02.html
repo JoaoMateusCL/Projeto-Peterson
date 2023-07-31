@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let num1 = Number(prompt("Digite o 1º valor: "))
+        let num2 = Number(prompt("Digite o 2º valor: "))
+        let num3 = Number(prompt("Digite o 3º valor: "))
+
+        if(num1 > num2 && num1 > num3 && num2 > num3)
+        {
+            document.getElementById("item1").innerHTML = `${num1},${num2},${num3}`   
+        }
+        if(num1 > num2 && num1 > num3 && num3 > num2)
+        {
+            document.getElementById("item1").innerHTML = `${num1},${num3},${num2}`   
+        }
+        if(num2 > num1 && num2 > num3 && num3 > num1)
+        {
+            document.getElementById("item1").innerHTML = `${num2},${num3},${num1}`   
+        }
+        if(num2 > num1 && num2 > num3 && num1 > num3)
+        {
+            document.getElementById("item1").innerHTML=`${num2},${num1},${num3}`
+        }
+        if(num3 > num2 && num3 > num1 && num2 > num1)
+        {
+            document.getElementById("item1").innerHTML = `${num3},${num2},${num1}`   
+        }
+        if(num3 > num2 && num3 > num1 && num1 > num2)
+        {
+            document.getElementById("item1").innerHTML = `${num3},${num1},${num2}`   
+        }
+    </script>
+</body>
+</html>

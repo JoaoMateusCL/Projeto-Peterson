@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma=0
+        let divisao=0
+        let multiplicacao=0
+        let subtracao=0
+        let flag = "batata"
+        while(flag != "sair")
+        {    
+            let num1 = Number(prompt("Informe um número: "))
+            let num2 = Number(prompt("Informe outro número: "))
+            let operacaoAritimetica = prompt("escolha a operção aritimética desejda segunido essa tabela:\nSímbolo   Operação Aritimépetica\n     +          Adição\n     -          subtração\n     *          Multipilicação\n     /          Divisão")
+            flag = prompt("Digite sair para sair: ")
+            if(operacaoAritimetica=="+")
+            {
+                soma = num1+num2
+                document.write(`O resultado da soma dos dois números foi: ${soma}<br>${num1}+${num2}=${soma}<br>`)
+            }
+            else if(operacaoAritimetica=="-")
+            {
+                subtracao = num1-num2
+                document.write(`O resultado da subtação dos dois números foi: ${subtracao}<br>${num1}-${num2}=${subtracao}<br>`)
+            }
+            else if(operacaoAritimetica=="*")
+            {
+                multiplicacao = num1*num2
+                document.write(`O resultado da multiplicação dos dois números foi: ${multiplicacao}<br>${num1}*${num2}=${multiplicacao}<br>`)
+            }
+            else if(operacaoAritimetica=="/")
+            {
+                divisao = num1/num2
+                document.write(`O resultado da divisão dos dois números foi: ${divisao}<br>${num1}/${num2}=${divisao}<br>`)
+            }
+            else
+            {
+                document.write("BATATA")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let pessoas = []
+        let pessoa1 =
+        {
+            nome: "Batata",
+            idade: 12
+        }
+        let pessoa2 =
+        {
+            nome: "Repolho",
+            idade: 17
+        }
+        let pessoa3 =
+        {
+            nome: "Lorde das Cinzas",
+            idade: 18
+        }
+        pessoas.push(Object.values(pessoa1),Object.values(pessoa2),Object.values(pessoa3))
+        for(let i = 0; i < 3; i++)
+        {
+            document.write(pessoas[i],"<br>")
+        }
+    </script>
+</body>
+</html>

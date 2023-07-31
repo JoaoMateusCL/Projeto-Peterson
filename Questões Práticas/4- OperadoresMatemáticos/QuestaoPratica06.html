@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let base = parseFloat(prompt("Entre com o valor da base em centímetros: "))
+        let altura = parseFloat(prompt("Entre com o valor da altura em centímetros: "))
+        document.getElementById("item1").innerHTML=`Entre com o valor da base em centímetros: ${base}<br>Entre com o valor da altura em centímetros: ${altura}<br>A área do triangulo é ${(base*altura)/2} centimetros quadrados`
+    </script>
+</body>
+</html>

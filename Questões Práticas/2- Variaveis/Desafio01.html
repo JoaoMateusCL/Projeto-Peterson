@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="item1"></p>
+    <script>
+        let PRIMEIRA = prompt("Digite um número qualquer: ")
+        let SEGUNDA = prompt("Digite outro número qualquer: ")
+        document.getElementById("item1").innerHTML=`Primeira: ${PRIMEIRA}<br>Segunda: ${SEGUNDA}<br>`
+
+        aux = PRIMEIRA
+        PRIMEIRA = SEGUNDA
+        SEGUNDA = aux
+
+        document.getElementById("item1").innerHTML +=`<br>Primeira: ${PRIMEIRA}<br>Segunda: ${SEGUNDA}`
+    </script>
+</body>
+</html>

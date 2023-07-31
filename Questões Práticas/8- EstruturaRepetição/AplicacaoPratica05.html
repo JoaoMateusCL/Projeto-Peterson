@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let flag = 0
+        let acumulador = 0 
+        while(flag != -1)
+        {
+            flag = Number(prompt("Digite um número:(-1 para sair)"))
+            acumulador += flag
+        }
+        document.write(`Essa foi a soma de todos os números: ${acumulador+1}`)
+    </script>
+</body>
+</html>
