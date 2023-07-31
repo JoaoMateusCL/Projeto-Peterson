@@ -1,0 +1,7 @@
+Qual é a operação matemática que é executada primeiro no JS?
+resultado = 10 + 5 – 3 a adição será a primeira
+resultado = 10 - 5 - 3 a primeira subtração será a primeira
+resultado = 10 * 5 - 3 a multiplicação será a primeira
+resultado = 10 - 5 * 3 a multiplicação será a primeira
+resultado = 10 / 5 * 3 a divisão será a primeira
+resultado = 10 / 5 + 3 a divisão será a primeira

@@ -1,0 +1,2 @@
+O que o código abaixo faz?
+    Esse código vai verificar vai verificar se a variavel nome é diferente de um espaço vazio

@@ -1,0 +1,3 @@
+O que faz o programa abaixo?
+
+Em um primeiro momento é criado um array contendo um série de número, no segundo momento é exibido no console o numero que corremsonde ao index 2 do array

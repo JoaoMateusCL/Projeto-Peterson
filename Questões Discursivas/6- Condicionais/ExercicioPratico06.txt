@@ -1,0 +1,8 @@
+Explique o que esse aplicativo JS faz:
+    Nesse código temos um sequencia de condicionais, onde cada um vai fazer alguma coisa dependendo do valor da variavel nota
+• O que acontece se digitarmos uma nota -3?:
+    O código vai retornar "Ruim" já que a nota é menor que 5
+• O que acontece se digitarmos uma nota 11?:
+    O código vai retornar "Excelente" já que a variavel nota não vai "entrar" em nenhuma condicionais ou seja no else
+• Como podemos melhorar esse código?:
+    Primeiro eu pensei em mais uma condição que seria nota == 10 para ser a maior "recompensa", e que o usuario insira o valor de nota

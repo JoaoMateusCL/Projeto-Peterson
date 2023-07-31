@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo?
+
+Primeiro é criado um array que contem três objetos depois vai ser exibido o objeto de posição 2 do array

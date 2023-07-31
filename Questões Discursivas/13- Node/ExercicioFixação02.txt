@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo?
+
+Nesse código utilizando o método get, vai ser criado uma função dento dessa função vai ser definido um variavel nome, e a resposta vai "puxar" o nome que foi definido anteriormente. esse nome vai ser o nome de um objeto

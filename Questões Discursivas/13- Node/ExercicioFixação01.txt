@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo?
+
+No primeiro momento do código o express vai ser "colocado" em um objeto  que tem o nome app. No segundo memento vai ser utilizado o metodo get para criar uma função que quando chamada vai ter como resposta "Usuario acessado com sucesso", a requisação e a resposta vão ser acessados com os parametros req e res. No terceiro momento utilizando o método listen o servidor vai ser inicializado na porta 3000, e vai ser definido o que vai acontecer qunado o servidor for inicializado, no caso desse código vai ser impresso no console "servidor iniciado na porta 3000"

@@ -1,0 +1,5 @@
+Qual é a operação matemática que é executada primeiro no JS?
+resultado = 10 ** 5 – 3 a potenciação
+resultado = 10 - 5 ** 3 a potenciação
+resultado = 10 * 5 ** 3 a potenciação
+resultado = 10 / 5 ** 3 a potenciação

@@ -1,0 +1,3 @@
+O que está acontecendo nesse código
+
+Esse código em um primeiro momento vai ser criado uma função, essa função vai retornar o dobro de um número

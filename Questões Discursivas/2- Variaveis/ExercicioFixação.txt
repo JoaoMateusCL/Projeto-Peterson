@@ -1,0 +1,6 @@
+1. Todas as variáveis em JS devem ser atribuídas a um tipo quando são declaradas ( ) certo (X) errado Não é preciso definir um tipo para uma variavel no js, mas por padrão a variavel será uma string
+2. Para o JS considera que as variáveis idade e Idade são idênticas ( ) certo (X) errado
+3. Sobre a instrução em JS: x = 10 O valor 10 é atribuído a variável x. (X) certo ( ) errado
+4. Sobre a instrução em JS: cliente = Fulano A atribuição do valor Fulano à variável cliente. (X) certo ( ) errado
+5. Sobre a instrução em JS: altura = 1,63 É a atribuição de um valor float à variável altura ( ) certo (X) errado por padrão a variavel recebe o valor como uma string
+6. Sobre a instrução em JS: deficiente = true É a atribuição de um valor boleano a variável deficiente ( ) certo (X) errado por padrão a variavel recebe o valor como uma string

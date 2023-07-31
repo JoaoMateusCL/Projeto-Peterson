@@ -1,0 +1,3 @@
+O que está acontecendo nesse código?
+
+Nesse código em um primeiro momento vai ser criada uma função que vai servir para vericar se uma varivavel que foi chamada de nota vai ser maior que 7 se isso for vardadeiro ele vai retornar "Aprovado" se não "reprova". Em um segundo momento essa função vai ser chamada duas vezes com os valores 4 e 10 então os resultados vão ser respectivamente reprovado e aprovado  

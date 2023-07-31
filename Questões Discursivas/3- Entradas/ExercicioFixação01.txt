@@ -1,0 +1,5 @@
+Observando o código JS abaixo. Explique o que está acontecendo em cada linha.
+Linha 1:
+    Na primeira linha do código a variavel a recebe um valor que vai ser digitado pelo usuario
+Linha 2:
+    Na segunda linha de código o valor da variavel a vai ser exibido no console do navegador

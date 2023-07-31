@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo?
+
+Essa vai ser uma pagina ejs (parece html mas não é), nessa pagina vai haver uma mensagem que vai "puxar" uma variavel com o nome nome

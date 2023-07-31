@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo?
+
+Em um primeiro momento foi criado um objeto e depois vai ser mostrado no console um parâmetro do objeto.

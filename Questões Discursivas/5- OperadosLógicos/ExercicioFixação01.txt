@@ -1,0 +1,2 @@
+O que o código abaixo faz?
+    Esse código verifica se a variável peso é maior que zero

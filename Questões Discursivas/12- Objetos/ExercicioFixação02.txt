@@ -1,0 +1,3 @@
+O que está acontecendo no código abaixo
+
+Em um primeiro momento se cria um objeto, dentro do objeto temos um método que imprimi no console todos os atributos do objeto, em um segundo momento esse método vai ser chamado.
